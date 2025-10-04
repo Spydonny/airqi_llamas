@@ -190,3 +190,34 @@ button:focus-visible {
     @apply bg-background text-foreground;
   }
 }
+/* Основной контейнер */
+.gm-style .gm-style-iw-c {
+  background-color: black !important;
+  color: white !important;
+  box-shadow: none !important;
+  border-radius: 10px !important;
+  padding: 0 !important;
+}
+
+/* Внутренний блок */
+.gm-style .gm-style-iw-d {
+  background-color: black !important;
+  padding: 8px 12px !important;
+  overflow: visible !important;
+}
+
+/* Хвостик снизу (убираем белое) */
+.gm-style .gm-style-iw-t::after {
+  background: black !important;
+}
+
+/* Убираем белые полосы по бокам */
+.gm-style-iw.gm-style-iw-c {
+  background: black !important;
+}
+
+/* Иногда помогает убрать артефакты */
+.gm-style-iw.gm-style-iw-c::before,
+.gm-style-iw.gm-style-iw-c::after {
+  background: black !important;
+}
