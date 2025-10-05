@@ -247,19 +247,17 @@ const DashboardPage = () => {
               >
                 <CardHeader className="flex items-center justify-center mb-2">
                   <CardTitle className="text-lg font-medium tracking-wide text-gray-300">
-                    Health Impact
+                    <h3>Health Impact</h3>
                   </CardTitle>
                 </CardHeader>
 
                 <CardContent className="text-center space-y-3">
-                  <p className="text-5xl font-extrabold tracking-tight text-white drop-shadow-md">
-                    {level.label}
-                  </p>
+                  <h1 className="text-sm mt-3 text-gray-400 font-mono">
+                    <span className="font-bold text-white 4xl">{healthImpact}</span><br/>
+                    <span className="font-bold text-white xl">{level.label}</span>
+                  </h1>
                   <p className="text-base text-gray-200 leading-snug max-w-xs mx-auto italic">
                     {level.desc}
-                  </p>
-                  <p className="text-sm mt-3 text-gray-400 font-mono">
-                    <span className="font-bold text-white 4xl">{healthImpact}</span>
                   </p>
                 </CardContent>
               </Card>
